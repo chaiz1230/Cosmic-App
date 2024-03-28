@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="32dp"
+    tools:context=".GameplayActivity"
+    android:background="@drawable/bg">
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="15dp"
+        android:padding="10dp"
+        android:text="Timer: 60"
+        android:background="#993E3C87"
+        android:textColor="#ffffff"
+        android:textSize="28sp"/>
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="15dp"
+        android:padding="10dp"
+        android:text="Score: 0"
+        android:background="#993E3C87"
+        android:textColor="#ffffff"
+        android:textSize="28sp"/>
+
+    <include
+        layout="@layout/images"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_below="@id/tv_score"
+        android:layout_marginTop="70dp"/>
+
+</RelativeLayout>

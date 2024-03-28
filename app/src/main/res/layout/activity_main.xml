@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"
+        />
+
+    <ImageView
+        android:id="@+id/btnStartGame"
+        android:layout_below="@id/logo"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:src="@drawable/btn_start"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/btnInstruction"
+        android:layout_below="@id/btnStartGame"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/btn_instruction"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/btnCredits"
+        android:layout_below="@id/btnInstruction"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/btn_credits"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/imgInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/instruction_page"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imgCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/credits_page"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

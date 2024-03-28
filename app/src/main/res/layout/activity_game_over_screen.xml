@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOverScreen"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:src="@drawable/game_over"
+        />
+
+    <TextView
+        android:id="@+id/tv_GameScore"
+        android:layout_below="@id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Score: 0"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/tv_TimeLeft"
+        android:layout_below="@id/tv_GameScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Time Left: 0"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        />
+
+    <TextView
+        android:id="@+id/tv_FinalScore"
+        android:layout_below="@id/tv_TimeLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Final Score: 0"
+        android:textSize="40sp"
+        android:layout_centerInParent="true"
+        android:textColor="#ffffff"
+        />
+
+    <ImageView
+        android:layout_below="@id/tv_FinalScore"
+        android:id="@+id/btnReplay"
+        android:src="@drawable/btn_replay"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_centerInParent="true"
+        />
+
+    <ImageView
+        android:layout_below="@id/btnReplay"
+        android:id="@+id/btnMenu"
+        android:src="@drawable/btn_menu"
+        android:layout_marginTop="10dp"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>
