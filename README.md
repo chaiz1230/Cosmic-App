@@ -1,0 +1,1 @@
+"Cosmic Script" is a zodiac-themed card-matching adventure, created for the "Applications Development and Emerging Technologies" course. It combines the fun of classic memory games with the mystery of the zodiac, inviting users to discover celestial matches while exploring the traits of each sign.
